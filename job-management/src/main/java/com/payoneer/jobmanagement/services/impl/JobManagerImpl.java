@@ -26,7 +26,7 @@ public class JobManagerImpl implements JobManager {
     private final JobPublisher jobPublisher;
 
     // every 10 seconds the scheduler will look for jobs that are ready to run
-    //@Scheduled(initialDelay = 20000, fixedRate = 10000)
+    @Scheduled(initialDelay = 20000, fixedRate = 10000)
     @Transactional
     @Override
     public void run() {

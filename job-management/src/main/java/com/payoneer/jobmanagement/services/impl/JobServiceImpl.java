@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoField;
 import java.util.List;
 
 import static com.payoneer.jobmanagement.entities.JobStatus.QUEUED;

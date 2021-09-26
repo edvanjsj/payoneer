@@ -19,6 +19,12 @@ public class DateUtil {
             return null;
         }
 
-        return LocalDateTime.parse(dateTime, FORMATTER);
+        dateTime = dateTime.trim();
+
+        try {
+            return LocalDateTime.parse(dateTime, FORMATTER);
+        } catch (Exception e) {
+            return null;
+        }
     }
 }
